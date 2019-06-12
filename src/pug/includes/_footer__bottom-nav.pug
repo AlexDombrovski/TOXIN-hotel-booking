@@ -1,35 +1,35 @@
 .bottom__nav
-  .container
-    .row
-      .col-lg-3.col-md-6.col-12
+  .container.bottom__navig
+    .row.bottom__navig-row
+      .col-lg-3.col-md-6.col-12.columns-one
         .brand
           +brand
         .main
           p.booking Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-      .col-lg-2.col-md-3.col-12
+      .col-lg-2.col-md-3.col-12.columns
         .navigation
           p.navigation.title навигация
           ul.navigation.list
-            li:a(href="/") О нас
-            li:a(href="/") Новости
-            li:a(href="/") Служба поддержки
-            li:a(href="/") Услуги
-      .col-lg-2.col-md-3.col-12
+            li:a.navlink(href="/") О нас
+            li:a.navlink(href="/") Новости
+            li:a.navlink(href="/") Служба поддержки
+            li:a.navlink(href="/") Услуги
+      .col-lg-2.col-md-3.col-12.columns
         .about
           p.about.title о нас
           ul.about.list
-            li:a(href="/") О сервисе
-            li:a(href="/") Наша команда
-            li:a(href="/") Вакансии 
-            li:a(href="/") Инвесторы
-      .col-lg-2.col-md-3.col-12
+            li:a.navlink(href="/") О сервисе
+            li:a.navlink(href="/") Наша команда
+            li:a.navlink(href="/") Вакансии 
+            li:a.navlink(href="/") Инвесторы
+      .col-lg-2.col-md-3.col-12.columns
         .support
           p.support.title Служба поддержки
           ul.support.list
-            li:a(href="/") Соглашения
-            li:a(href="/") Сообщества
-            li:a(href="/") Связь с нами 
-      .col-lg-3.col-md-6.col-12
+            li:a.navlink(href="/") Соглашения
+            li:a.navlink(href="/") Сообщества
+            li:a.navlink(href="/") Связь с нами 
+      .col-lg-3.col-md-6.col-12.columns.last
         .subscribe
           p.subscribe.title Подписка
           form(action="", method="post")

@@ -193,45 +193,96 @@ table {
     text-align: right;
     color: rgba(31, 32, 65, 0.75); }
 
-.bottom__nav {
-  background-color: #E5E5E5; }
-  .bottom__nav .container {
-    height: 372px; }
-    .bottom__nav .container .title {
-      font-family: 'Montserrat-SemiBold';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #1F2041;
-      margin-bottom: 21px; }
-    .bottom__nav .container .subscribe__offer {
-      font-family: 'Montserrat-Regular';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      color: rgba(31, 32, 65, 0.5); }
-    .bottom__nav .container .booking, .bottom__nav .container .list {
-      font-family: 'Montserrat-Regular';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
-      color: rgba(31, 32, 65, 0.5); }
-    .bottom__nav .container #subscribe__field {
-      position: absolute;
-      width: 260px;
-      height: 44px;
-      background: #FFFFFF;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      border-radius: 4px;
-      font-family: 'Montserrat-Regular';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      color: rgba(31, 32, 65, 0.5);
-      padding-left: 15px;
-      margin-top: 20px; }
+.bottom__navig {
+  height: 372px; }
+  .bottom__navig .bottom__navig-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 50px 0;
+    width: 1440px; }
+
+.columns-one {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 10px; }
+
+.columns {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  padding: 50px 10px; }
+
+.last {
+  padding-bottom: 20px; }
+
+.title {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 21px; }
+
+.subscribe__offer {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5); }
+
+.booking {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.5); }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5); }
+
+.navlink {
+  margin: 10px 0; }
+
+#subscribe__field {
+  position: absolute;
+  width: 260px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 15px;
+  margin-top: 20px; }
