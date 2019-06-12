@@ -300,3 +300,8 @@ table {
   font-weight: normal;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75); }
+
+.social-icons {
+  text-align: right; }
+  .social-icons img {
+    margin-left: 20px; }
