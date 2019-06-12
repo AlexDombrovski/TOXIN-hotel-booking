@@ -1,0 +1,37 @@
+.bottom__nav
+  .container
+    .row
+      .col-lg-3.col-md-6.col-12
+        .brand
+          +brand
+        .main
+          p.booking Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      .col-lg-2.col-md-3.col-12
+        .navigation
+          p.navigation.title навигация
+          ul.navigation.list
+            li:a(href="/") О нас
+            li:a(href="/") Новости
+            li:a(href="/") Служба поддержки
+            li:a(href="/") Услуги
+      .col-lg-2.col-md-3.col-12
+        .about
+          p.about.title о нас
+          ul.about.list
+            li:a(href="/") О сервисе
+            li:a(href="/") Наша команда
+            li:a(href="/") Вакансии 
+            li:a(href="/") Инвесторы
+      .col-lg-2.col-md-3.col-12
+        .support
+          p.support.title Служба поддержки
+          ul.support.list
+            li:a(href="/") Соглашения
+            li:a(href="/") Сообщества
+            li:a(href="/") Связь с нами 
+      .col-lg-3.col-md-6.col-12
+        .subscribe
+          p.subscribe.title Подписка
+          form(action="", method="post")
+            p.subscribe__offer Получайте специальные предложения и новости сервиса
+            input#subscribe__field(type="email", name="Email", placeholder="Email")
