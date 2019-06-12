@@ -1,7 +1,7 @@
 # TOXIN-hotel-booking
-FSD education program
+FSD education program. Разработка учебного проекта по поиску номеров в отеле.
 
-Макет страниц по поиску номеров в отеле здесь: https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/. 
+Макет страниц здесь: https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/. 
 В макете на первой вкладке представлен UI Kit — набор всех элементов со всех страниц во всех состояниях.
 
 На второй вкладке сами страницы по поиску номеров отеля.
