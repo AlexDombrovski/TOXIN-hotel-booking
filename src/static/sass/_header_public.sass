@@ -19,7 +19,7 @@
   display: none
 
 .navbar-brand
-  position: relative
+  position: 
   width: 40px
   height: auto
   left: 0
@@ -29,14 +29,43 @@
 .collapse 
   justify-content: flex-end
 
-.nav-link
+.navbar-nav
+  align-items: center
+
+.nav-item
   font-family: 'Montserrat-Regular'
   font-style: normal
   font-weight: normal
   font-size: 14px
+  line-height: 
   color: rgba(31, 32, 65, 0.5)
-  padding-right: 10px
-  padding-left: 10px
+  padding: 10px 10px
+
+.nav-item__img
+  margin: 0 5px
+
+.nav-item__img-down
+  transform: rotate(180deg)
+    
+.nav-item__ul
+  position: absolute
+  width: 160px
+  height: 160px
+  background: 
+    color: #ffffff
+  z-index: 1
+  margin-top: 10px
+  text-align: center
+  overflow: hidden
+  opacity: 0
+  transition: all 0.5s ease-in
+
+.nav-item__list
+  padding: 10px 0 
+    
+.nav-item__ul-block
+  opacity: 1
+
 
 .buttons
   text-align: -webkit-right

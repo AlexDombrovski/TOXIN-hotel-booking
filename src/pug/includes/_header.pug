@@ -8,11 +8,23 @@
           span.navbar-toggler-icon     
           .collapse.navbar-collapse(id="navbarSupportedContent")
             ul.navbar-nav
-              li.nav-item: a.nav-link(href="/") О нас
-              li.nav-item: a.nav-link(href="/") Услуги
+              li.nav-item: a.nav-link(href="/") О нас               
+              li.nav-item Услуги
+                img.nav-item__img(src="img/expand_more.png", alt="")
+                ul.nav-item__ul
+                  li.nav-item__list Offer one
+                  li.nav-item__list Offer two
+                  li.nav-item__list Offer three
+                  li.nav-item__list Offer four
               li.nav-item: a.nav-link(href="/") Вакансии
               li.nav-item: a.nav-link(href="/") Новости
-              li.nav-item: a.nav-link(href="/") Соглашения         
+              li.nav-item Соглашения
+                img.nav-item__img(src="img/expand_more.png", alt="")
+                ul.nav-item__ul
+                  li.nav-item__list Agreement one
+                  li.nav-item__list Agreement two
+                  li.nav-item__list Agreement three
+                  li.nav-item__list Agreement four          
       .col-lg-4.d-none.d-lg-block.d-xl-block.buttons
         button.enter(type="button") войти
         button.registration(type="button") зарегистрироваться
