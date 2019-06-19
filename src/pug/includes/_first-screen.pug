@@ -8,6 +8,22 @@ section.first-screen
             input(type="text" id="datepicker" placeholder="ДД.ММ.ГГГГ")
             img(src="img/expand_more.png", alt="")
           a(class='button' href='index-page.html') подобрать номер
+        .datepicker__wrapper
+          .datepicker__header
+            img.datepicker__back-arrow(src="img/arrow_back.png", alt="")
+            p.datepicker__month Август
+            p.datepicker__year 2019
+            img.datepicker__next-arrow(src="img/arrow_forward.png", alt="")
+          .datepicker__table
+            table 
+              tr
+                th Пн
+                th Вт
+                th Ср
+                th Чт
+                th Пт
+                th Сб
+                th Вс
       .col-lg-6.trigger
         .trigger__block
           p.trigger__text Лучшие номера для вашей работы, отдыха и просто вдохновения 
