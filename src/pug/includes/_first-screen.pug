@@ -1,29 +1,23 @@
 section.first-screen
   .container
     .row
-      .col-lg-4.search
-        .search__field
-          p.search__title Найдём номера под ваши пожелания
-          .blank-space__one
-            input(type="text" id="datepicker" placeholder="ДД.ММ.ГГГГ")
-            img(src="img/expand_more.png", alt="")
-          a(class='button' href='index-page.html') подобрать номер
-        .datepicker__wrapper
-          .datepicker__header
-            img.datepicker__back-arrow(src="img/arrow_back.png", alt="")
-            p.datepicker__month Август
-            p.datepicker__year 2019
-            img.datepicker__next-arrow(src="img/arrow_forward.png", alt="")
-          .datepicker__table
-            table 
-              tr
-                th Пн
-                th Вт
-                th Ср
-                th Чт
-                th Пт
-                th Сб
-                th Вс
+      .col-md-4
+        .choice-number
+          .choice-number__choice
+            p.choice-number__title Найдём номера под ваши пожелания
+            .choice-number__datepicker
+              .choice-number__datepicker-in
+                .choice-number__datepicker-in-title прибытие
+                input.choice-number__datepicker-in-input(type="text" id="datepicker-in" placeholder="ДД.ММ.ГГГГ")
+                
+              .choice-number__datepicker-out
+                .choice-number__datepicker-out-title выезд
+                input.choice-number__datepicker-out-input(type="text" id="datepicker-out" placeholder="ДД.ММ.ГГГГ")
+                img.choice-number__img(src="img/expand_more.png", alt="")
+            .choice-number__guests
+              .choice-number__guests-title гости
+              input.choice-number__guests-input(type="text" placeholder="Сколько гостей")             
+            a(class='button' href='index-page.html') подобрать номер        
       .col-lg-6.trigger
         .trigger__block
           p.trigger__text Лучшие номера для вашей работы, отдыха и просто вдохновения 

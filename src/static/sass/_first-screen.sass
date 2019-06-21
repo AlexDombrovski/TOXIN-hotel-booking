@@ -6,7 +6,7 @@
     repeat: no-repeat
     size: cover
 
-.search__field
+.choice-number
   position: absolute
   display: flex
   flex-direction: column
@@ -22,18 +22,98 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
   border-radius: 4px
 
-.search__title
+.choice-number__choice
+  width: 320px
+  height: inherit
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.choice-number__title
   font-family: 'Montserrat-SemiBold'
   font-style: normal
   font-weight: bold
   font-size: 24px
   line-height: 30px
-  margin: 40px 30px
+  margin-top: 40px
+  margin-bottom: 20px
 
-.blank-space__one
-  width: 250px
-  height: 100px
-  border: 1px solid rgba(0, 0, 0, 0.12)
+.choice-number__datepicker
+  display: flex
+  justify-content: space-between
+  box-sizing: border-box
+  width: inherit 
+
+.choice-number__datepicker-in-title, .choice-number__datepicker-out-title
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1F2041
+  margin-bottom: 6px
+
+.choice-number__datepicker-in-input
+  width: 150px
+  height: 44px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 4px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: rgba(31, 32, 65, 0.75)
+  padding-left: 15px
+  cursor: pointer
+  background:
+    image: url(../img/expand_more.png)
+    repeat: no-repeat
+    position-x: 95%
+    position-y: 50% 
+
+.choice-number__datepicker-out-input
+  width: 150px
+  height: 44px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 4px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: rgba(31, 32, 65, 0.75)
+  padding-left: 15px
+
+.choice-number__guests-title
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1F2041
+  margin-top: 20px
+  margin-bottom: 6px
+
+.choice-number__guests-input
+  width: 320px
+  height: 44px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 4px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: rgba(31, 32, 65, 0.75)
+  padding-left: 15px
+
+
 
 .button
   width: 320px
