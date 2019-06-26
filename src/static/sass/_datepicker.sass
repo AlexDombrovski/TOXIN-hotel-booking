@@ -1,37 +1,89 @@
-.datepicker__wrapper
-  position: absolute
+.ui-datepicker
   width: 320px
-  height: 369px
-  background: #FFFFFF
-  border: 1px solid rgba(31, 32, 65, 0.25)
-  box-sizing: border-box
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
-  border-radius: 4px
+  max-height: 369px 
 
-.datepicker__header
-  display: flex
-  justify-content: space-around
-  align-items: center
-  height: 50px
+.ui-widget-header
+  border: none
+  background-color: #ffffff
 
-.datepicker__back-arrow
-.datepicker__next-arrow
+.ui-widget-header .ui-icon
+  background-image: url(../img/arrows_big.png)
+  width: 24px
+  height: 24px
 
-.datepicker__month, .datepicker__year
+.ui-icon-circle-triangle-w
+  background-position: -47px -8px
+
+.ui-icon-circle-triangle-e
+  background-position: -2px -8px
+
+.ui-datepicker-prev, .ui-datepicker-next
+  &:hover
+    background-color: #ffffff
+    border: none
+
+.ui-datepicker-title
   font-family: 'Montserrat-SemiBold'
   font-style: normal
   font-weight: bold
-  font-size: 19px
-  text-align: center
   color: #1F2041
+  font-size: 19px
+  line-height: 24px
+  text-align: center
 
-.datepicker__table
-  tr
-    
-    th
+.ui-datepicker-calendar
+  thead
+    span
       font-family: 'Montserrat-SemiBold'
       font-style: normal
       font-weight: bold
       font-size: 12px
-      line-height: 15px     
-      color: #BC9CFF   
+      line-height: 15px
+      color: #BC9CFF
+  tbody
+    td
+      width: 43px
+      font-family: 'Montserrat-Regular'
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: rgba(31, 32, 65, 0.5)
+      margin: 30px auto
+      .ui-state-default
+        background-color: #ffffff
+        border: none
+        margin: 8px 0
+        width: 30px
+
+.ui-widget-content
+  border: none
+  position: relative
+  top: -30px
+
+.ui-widget button
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+
+.ui-datepicker 
+  .ui-datepicker-buttonpane button
+    margin: 30px 0
+
+.ui-datepicker-current 
+  border: none
+  background-color: #ffffff
+  font-family: 'Montserrat-SemiBold'
+  font-style: normal
+  font-weight: bold 
+  color: rgba(31, 32, 65, 0.5)
+  margin: 20px
+
+.ui-datepicker-close
+  border: none
+  background-color: #ffffff
+  font-family: 'Montserrat-SemiBold'
+  font-style: normal
+  font-weight: bold
+  color: #BC9CFF
+  margin: 20px
