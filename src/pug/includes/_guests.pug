@@ -7,19 +7,19 @@
       .choice-number__quantity
         .choice-number__adults
           p взрослые
-          button.minus(type="submit")
-          input#adults(type="submit", value="")
-          button.plus(type="submit")
+          button.minus.adults(type="button")
+          input#adults(type="number", name="", value="0", step="1", min="0", max="3")
+          button.plus.adults(type="button")
         .choice-number__children
           p дети
-          button.minus(type="submit")
-          input#children(type="submit", value="")
-          button.plus(type="submit")
+          button.minus.children(type="button")
+          input#children(type="number", name="", value="0", step="1", min="0", max="3")
+          button.plus.children(type="button")
         .choice-number__babies
           p младенцы
-          button.minus(type="submit")
-          input#babies(type="submit", value="")
-          button.plus(type="submit")
-        .choice-number__commands
+          button.minus.babies(type="button")
+          input#babies(type="number", name="", value="0", step="1", min="0", max="3")
+          button.plus.babies(type="button")
+        form.choice-number__commands
           button.reset-button(type="reset") очистить
           button.apply-button(type="submit") применить
