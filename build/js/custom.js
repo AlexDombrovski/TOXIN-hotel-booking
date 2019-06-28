@@ -42,7 +42,7 @@ let minusAdultsButton = document.querySelector('.minus.adults'),
     plusBabiesButton = document.querySelector('.plus.babies'),
     inputBabies = document.querySelector('#babies');
 
-// Счётчик взрослых:
+// Counter Adults
 function counterPlusAdults() {
   let valueAdults = inputAdults.value;
   let min = inputAdults.attributes.min.value;
@@ -92,7 +92,7 @@ let guestsNumber = document.getElementById('guests-number'),
       guestsNumber.innerHTML = sum();
     });
 
-// Счётчик детей:
+// Counter Children:
 function counterPlusChildren() {
   let valueChildren = inputChildren.value;
   let min = inputChildren.attributes.min.value;
@@ -127,4 +127,41 @@ function counterMinusChildren() {
 
 minusChildrenButton.addEventListener('click', function(evt) {
     inputChildren.value =counterMinusChildren();
+});
+
+// Counter Babies:
+function counterPlusBabies() {
+  let valueBabies = inputBabies.value;
+  let min = inputBabies.attributes.min.value;
+  let max = inputBabies.attributes.max.value;
+  
+  valueBabies++;
+
+  if (valueBabies >= min && valueBabies <= max) {
+    return valueBabies;
+  } else {
+    return max;
+  }  
+}
+
+plusBabiesButton.addEventListener('click', function(evt) {
+    inputBabies.value = counterPlusBabies();
+});
+
+function counterMinusBabies() {
+  let valueBabies = inputBabies.value;
+  let min = inputBabies.attributes.min.value;
+  let max = inputBabies.attributes.max.value;
+
+  valueBabies--;
+
+  if (valueBabies >= min && valueBabies <= max) {
+    return valueBabies;
+  } else {
+    return min;
+  }      
+}
+
+minusBabiesButton.addEventListener('click', function(evt) {
+    inputBabies.value =counterMinusBabies();
 });
