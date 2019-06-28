@@ -79,19 +79,6 @@ minusAdultsButton.addEventListener('click', function(evt) {
     inputAdults.value =counterMinusAdults();
 });
 
-function sum () {
-  let guests = 0;
-  guests = parseInt(inputAdults.value) + parseInt(inputChildren.value) + parseInt(inputBabies.value);
-  return guests;
-}
-
-let guestsNumber = document.getElementById('guests-number'),
-    applyButton = document.querySelector('.apply-button');
-
-    applyButton.addEventListener('click', function(){
-      guestsNumber.innerHTML = sum();
-    });
-
 // Counter Children:
 function counterPlusChildren() {
   let valueChildren = inputChildren.value;
@@ -164,4 +151,30 @@ function counterMinusBabies() {
 
 minusBabiesButton.addEventListener('click', function(evt) {
     inputBabies.value =counterMinusBabies();
+});
+
+// sum of guests
+function sum () {
+  let guests = 0;
+  guests = parseInt(inputAdults.value) + parseInt(inputChildren.value) + parseInt(inputBabies.value);
+  return guests;
+}
+
+let guestsNumber = document.getElementById('guests-number'),
+    applyButton = document.querySelector('.apply-button');
+
+    applyButton.addEventListener('click', function(){
+      guestsNumber.innerHTML = sum();
+      guestsChoice.classList.toggle('choice-number__quantity-on')
+    });
+
+// click on reset button
+let resetButton = document.querySelector('.reset-button');
+
+resetButton.addEventListener('click', function (evt) {
+      guestsNumber.innerHTML = 'Сколько гостей';
+      inputBabies.value = 0;
+      inputChildren.value = 0;
+      inputAdults.value = 0;
+
 });
