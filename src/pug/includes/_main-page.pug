@@ -12,9 +12,36 @@ mixin number-card
 
 .container
   .row
-    .col-lg-3.col-md-5.col-12
-      .general-data
-    .col-lg-9.col-md-7.col-12
+    .col-lg-3.col-md-5.col-12.all-data
+      .booking-data
+        .booking-dates
+          .booking-dates__title даты пребывания в отеле
+          .booking-dates__choice
+            .booking-dates__input
+            img.booking-dates__arrow(src="img/expand_more.png", alt="")
+        .guests-quantity
+          .guests-quantity__title гости
+          .guests-quantity__guests
+            .guests-quantity__counter
+            img.guests-quantity__arrow(src="img/expand_more.png", alt="")
+        .price-range
+          .price-range__main
+            .price-range__title диапазон цены
+            .price-range__levels 
+          input#price-range__input(type="range", name="")
+          p.price-range__desc Стоимость за сутки пребывания в номере
+        .checkboxes
+          .checkboxes__title Checkbox Buttons
+          .checkboxes__smoke
+            input#checkboxes__smoke(type="checkbox", name="")
+            label(for="checkboxes__smoke") Можно курить
+          .checkboxes__animals
+            input#checkboxes__animals(type="checkbox", name="")
+            label(for="checkboxes__animals") Можно с питомцами
+          .checkboxes__can-guests
+            input#checkboxes__can-guests(type="checkbox", name="")
+            label(for="checkboxes__can-guests") Можно пригласить гостей <br>(до 10 человек)
+    .col-lg-9.col-md-7.col-12.choice-numbers
       h1 Номера, которые мы для вас подобрали
       .numb
         +number-card
