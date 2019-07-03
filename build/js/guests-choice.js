@@ -152,7 +152,9 @@ function sum () {
         return guests + ' гостя' + ', ' + inputChildren.value + ' ребёнок';
   } if (inputAdults.value > 0 && inputBabies.value > 0) {
         return guests + ' гостя' + ', ' + inputBabies.value + ' младенец';
-  }  else {
+  }  if (inputAdults.value == 0 && inputChildren.value > 0 || inputBabies.value > 0) {
+        return 'Вы ввели только детей!';
+  } else {
         return guests + ' гостя';        
   }
 }
