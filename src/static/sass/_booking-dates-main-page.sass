@@ -1,0 +1,51 @@
+.booking-dates
+  margin-bottom: 21px
+
+.booking-dates__title
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1F2041
+  margin-bottom: 5px
+
+.booking-dates__choice
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 266px
+  height: 44px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  border-radius: 4px
+  padding: 0 15px
+
+.booking-dates__input
+  border: none
+  width: 266px
+  height: 42px
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  cursor: pointer
+  background:
+    image: url(../img/expand_more.png)
+    repeat: no-repeat
+    position: right
+  &:focus
+    outline: none
+
+// daterangepicker
+.daterangepicker .drp-calendar.left
+  width: 281px
+
+.daterangepicker .drp-calendar.right, .daterangepicker .drp-selected
+  display: none
+
+.daterangepicker.show-calendar .drp-buttons
+  display: flex
+  justify-content: space-between

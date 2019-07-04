@@ -1,0 +1,146 @@
+.guests-quantity__arrow
+  cursor: pointer
+
+.guests-quantity__title, .price-range__title, .checkboxes__title 
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1f2041
+  margin-bottom: 5px
+
+.guests-quantity
+  margin-bottom: 21px
+
+// counter js
+.guests-quantity__guests
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 266px
+  height: 44px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  border-radius: 4px
+  padding: 0 15px
+  img.guests-quantity__arrow
+    cursor: pointer
+  img.guests-quantity__arrow-over
+    transform: rotate(180deg)
+
+.guests-quantity__p
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: rgba(31, 32, 65, 0.75)
+    
+.guests-quantity__quantity
+  width: 265px
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 43px
+  left: 0px
+  z-index: 2
+  overflow: hidden
+  opacity: 0
+  transition: all 0.3s ease-in
+  border:
+    left: 1px solid rgba(31, 32, 65, 0.25)
+    right: 1px solid rgba(31, 32, 65, 0.25)
+    bottom: 1px solid rgba(31, 32, 65, 0.25)
+  background-color: #ffffff
+
+.guests-quantity__quantity-on
+  opacity: 1
+
+.choice-number__adults, .choice-number__children, .choice-number__babies 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: inherit
+  height: 44px
+  padding-left: 14px
+  padding-right: 7px
+  p
+    width: 170px
+    font-family: 'Montserrat-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: rgba(31, 32, 65, 0.75)
+.minus
+  width: 30px
+  height: 30px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 22px
+  background:
+    image: url(../img/minus.png)
+    position: center
+    repeat: no-repeat
+  cursor: pointer
+
+#adults, #children, #babies
+  width: 30px
+  height: 30px
+  border: none
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-align: center
+  text-transform: uppercase
+  color: #1F2041
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    -moz-appearance: textfield
+    margin: 0
+
+.plus
+  width: 30px
+  height: 30px
+  border: 1px solid rgba(31, 32, 65, 0.25)
+  box-sizing: border-box
+  border-radius: 22px
+  background:
+    image: url(../img/plus.png)
+    position: center
+    repeat: no-repeat
+  cursor: pointer
+
+.choice-number__commands
+  display: flex
+  justify-content: space-between
+  padding: 15px 0 15px 5px
+
+.reset-button
+  background-color: #ffffff
+  border: none
+  font-family: 'Montserrat-SemiBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: rgba(31, 32, 65, 0.5)
+  cursor: pointer
+
+.apply-button
+  background-color: #ffffff
+  border: none
+  font-family: 'Montserrat-SemiBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #BC9CFF
+  cursor: pointer
