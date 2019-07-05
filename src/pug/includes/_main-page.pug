@@ -59,6 +59,15 @@ mixin number-card
           .checkboxes
             input#checkboxes__can-guests(type="checkbox", name="")
             label.ch-boxes(for="checkboxes__can-guests") Можно пригласить гостей <br>(до 10 человек)
+          .availability__title доступность
+          .availability__checkboxes
+            input#checkboxes__wide-way(type="checkbox", name="")
+            label.avail(for="checkboxes__animals") <span>Широкий коридор</span>
+            p.small Ширина коридоров в номере не менее 91 см.
+          .availability__checkboxes
+            input#checkboxes__helper(type="checkbox", name="")
+            label.avail(for="checkboxes__can-guests") <span>Помощник для инвалидов</span>
+            p.small На 1 этаже вас встретит специалист и проводит до номера. 
     .col-lg-9.col-md-7.col-12.choice-numbers
       h1 Номера, которые мы для вас подобрали
       .numb
