@@ -1,8 +1,7 @@
 let labels = document.querySelectorAll('.ch-boxes'),
-    checkBoxes = document.querySelectorAll('.checkboxes');
-    //labelCheck = document.querySelector('.checked'),
-    //checkboxesChecked = document.querySelector('.checkboxes__checked');
-    
+    checkBoxes = document.querySelectorAll('.checkboxes'),
+    avail = document.querySelectorAll('.avail'),
+    availabilityCheckboxes = document.querySelectorAll('.availability__checkboxes');
     
 for (let i = 0; i < labels.length; i++) {
   labels[i].addEventListener('click', function(evt) {
@@ -10,9 +9,11 @@ for (let i = 0; i < labels.length; i++) {
   });
 }
 
-//labelCheck.addEventListener('click', function(evt) {
-  //checkboxesChecked.classList.toggle('checkboxes');
-//})
+for (let i = 0; i < avail.length; i++) {
+  avail[i].addEventListener('click', function() {
+    availabilityCheckboxes[i].classList.toggle('availability__checkboxes-checked');
+  });
+}
 
 
 
