@@ -1,0 +1,43 @@
+.checkboxes__title
+  font-family: 'Montserrat-ExtraBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
+  color: #1f2041
+  margin-bottom: 18px
+
+.checkboxes
+  position: relative
+  margin-bottom: 10px
+  input
+    visibility: collapse
+    width: 20px
+    height: 20px
+    z-index: 0
+  label
+    position: absolute
+    left: 0px
+    width: 265px
+    height: 20px
+    font-family: 'Montserrat-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: rgba(31, 32, 65, 0.5)    
+    padding-left: 30px
+    cursor: pointer
+    z-index: 2
+    background:
+        image: url('../img/Rectangle 2.png')
+        position: left
+        repeat: no-repeat
+
+.checkboxes__checked
+  label
+    background:
+        image: url('../img/Rectangle 2checked.png')
+        position: left
+        repeat: no-repeat

@@ -44,21 +44,21 @@ mixin number-card
                 button.apply-button(type="button") применить
         .price-range
           .price-range__main
-            .price-range__title диапазон цены
-            .price-range__levels 
-          input#price-range__input(type="range", name="")
+            .price-range__title диапазон цены             
+            input#price-range__input(type="text", readonly style="border:0; color:#f6931f; font-weight:bold;")
+          #price-range__levels
           p.price-range__desc Стоимость за сутки пребывания в номере
-        .checkboxes
+        .checkboxes__all
           .checkboxes__title Checkbox Buttons
-          .checkboxes__smoke
+          .checkboxes
             input#checkboxes__smoke(type="checkbox", name="")
-            label(for="checkboxes__smoke") Можно курить
-          .checkboxes__animals
+            label.ch-boxes(for="checkboxes__smoke") Можно курить
+          .checkboxes
             input#checkboxes__animals(type="checkbox", name="")
-            label(for="checkboxes__animals") Можно с питомцами
-          .checkboxes__can-guests
+            label.ch-boxes(for="checkboxes__animals") Можно с питомцами
+          .checkboxes
             input#checkboxes__can-guests(type="checkbox", name="")
-            label(for="checkboxes__can-guests") Можно пригласить гостей <br>(до 10 человек)
+            label.ch-boxes(for="checkboxes__can-guests") Можно пригласить гостей <br>(до 10 человек)
     .col-lg-9.col-md-7.col-12.choice-numbers
       h1 Номера, которые мы для вас подобрали
       .numb
