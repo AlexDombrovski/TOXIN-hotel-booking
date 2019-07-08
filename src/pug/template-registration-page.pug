@@ -1,0 +1,30 @@
+include includes/_variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    <!-- Bootstrap -->
+    link(rel="stylesheet", href="css/bootstrap-grid.min.css")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    
+    <!-- Fonts -->
+    link(rel="stylesheet", type="text/css" href="css/Montserrat.css")
+    link(rel="stylesheet", type="text/css" href="css/Quicksand.css")
+
+    <!-- CSS -->
+    link(rel="stylesheet", type="text/css" href="css/main.css")
+
+    title #{myTitle}
+
+  body
+    header
+      block header
+    main
+      
+    footer
+      block footer__bottom-nav
+      block footer__copyright

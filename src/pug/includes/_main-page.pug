@@ -1,3 +1,4 @@
+<!-- Миксин карточки номера -->
 mixin number-card
   .numb__card
     img.numb__img(src="img/image.jpg", alt="")
@@ -6,10 +7,15 @@ mixin number-card
         .numb__level № 888 <span>люкс</span>
         .numb__price 9 990₽ <span>в сутки</span>
       .numb__rating
-        .numb__stars *****
+        .numb__stars 
+          img.numb__stars-img(src="img/star.png", alt="")
+          img.numb__stars-img(src="img/star.png", alt="")
+          img.numb__stars-img(src="img/star.png", alt="")
+          img.numb__stars-img(src="img/star.png", alt="")
+          img.numb__stars-img(src="img/star_border.png", alt="")
         .numb__responses 145 <span>Отзывов</span>
 
-
+<!-- Начало страницы -->
 .container
   .row
     .col-lg-3.col-md-5.col-12.all-data
