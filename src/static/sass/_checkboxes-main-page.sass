@@ -156,6 +156,10 @@
       line-height: 18px
       color: rgba(31, 32, 65, 0.75)
 
+.more-conveniences
+  position: absolute
+  bottom: 100px
+
 .more-conveniences__header
   display: flex
   justify-content: space-between
@@ -170,11 +174,26 @@
   font-size: 12px
   line-height: 15px
   text-transform: uppercase
-  color: #1F2041 
+  color: #1F2041
+
+.more-conveniences__arrow
+  position: absolute
+  right: -25px
+  bottom: 277px
+  cursor: pointer
+
+.more-conveniences__arrow-down
+  transform: rotate(180deg)
 
 .more-conveniences__list
   display: flex
   flex-direction: column
+  overflow: hidden
+  opacity: 0
+  transition: all 0.3s ease-in
+
+.more-conveniences__list-visible
+  opacity: 1
 
 .more-conveniences__box
   position: relative
@@ -201,4 +220,29 @@
         image: url('../img/Rectangle 2.png')
         position: left
         repeat: no-repeat
-  
+
+.more-conveniences__box-down
+  position: relative
+  margin-bottom: 10px
+  input
+    visibility: collapse
+    width: 20px
+    height: 20px
+    z-index: 0
+  label
+    position: absolute
+    left: 0px
+    width: 265px
+    height: 21px
+    font-family: 'Montserrat-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px    
+    color: rgba(31, 32, 65, 0.5)    
+    padding-left: 30px
+    cursor: pointer
+    z-index: 2
+    background:
+        image: url('../img/Rectangle 2checked.png')
+        position: left
+        repeat: no-repeat

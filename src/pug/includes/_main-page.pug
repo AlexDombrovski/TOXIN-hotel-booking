@@ -76,19 +76,19 @@ mixin number-card
           .conveniences__numb-down
             .conveniences__bedrooms
               p спальня
-              button.minus.adults(type="button")
-              input#adults(type="number", name="", value="0", step="1", min="0", max="3")
-              button.plus.adults(type="button")
-            .conveniences__beds
+              button.minus.bedrooms(type="button")
+              input#bedrooms(type="number", name="", value="0", step="1", min="0", max="3")
+              button.plus.bedrooms(type="button")
+            .conveniences__bed
               p кровать
-              button.minus.children(type="button")
-              input#children(type="number", name="", value="0", step="1", min="0", max="3")
-              button.plus.children(type="button")
+              button.minus.bed(type="button")
+              input#bed(type="number", name="", value="0", step="1", min="0", max="3")
+              button.plus.bed(type="button")
             .conveniences__bathroom
               p ванные комнаты
-              button.minus.babies(type="button")
-              input#babies(type="number", name="", value="0", step="1", min="0", max="3")
-              button.plus.babies(type="button")
+              button.minus.bathroom(type="button")
+              input#bathroom(type="number", name="", value="0", step="1", min="0", max="3")
+              button.plus.bathroom(type="button")
         .more-conveniences
           .more-conveniences__header
             .more-conveniences__title дополнительные удобства
@@ -99,26 +99,25 @@ mixin number-card
               label.conveniences__label(for="checkboxes__can-guests") Завтрак
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Письменный стол
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Стул для кормления
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Кроватка
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Телевизор
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Шампунь
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
+              label.conveniences__label(for="checkboxes__can-guests") Телевизор
             .more-conveniences__box
               input#conveniences(type="checkbox", name="")
-              label.conveniences__label(for="checkboxes__can-guests") Завтрак
-
+              label.conveniences__label(for="checkboxes__can-guests") Шампунь
     .col-lg-9.col-md-7.col-12.choice-numbers
       h1 Номера, которые мы для вас подобрали
       .numb
