@@ -38,7 +38,7 @@
   font-weight: normal
   font-size: 14px
   line-height: 18px
-  color: rgba(31, 32, 65, 0.25)
+  color: #1F2041
   margin-bottom: 10px
   padding: 13px 0 13px 15px
   &:focus
@@ -46,18 +46,40 @@
 
 .new-account__radiobuttons
   display: flex
-  height: 24px
-  align-items: center
-  label
+  height: 21px
+  .label-of
     font-family: 'Montserrat-Regular'
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 24px
     color: rgba(31, 32, 65, 0.75)
-    margin: 2px 20px 0 14px
+    margin: 2px 20px 0 0
+    padding-left: 30px
+    cursor: pointer
+    background:
+      image: url(../img/gend-of.png)
+      repeat: no-repeat
+      position: left
+      size: contain
+  .label-on
+    font-family: 'Montserrat-Regular'
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    color: rgba(31, 32, 65, 0.75)
+    margin: 2px 20px 0 0
+    padding-left: 30px
+    cursor: pointer
+    background:
+      image: url(../img/gend-on.png)
+      repeat: no-repeat
+      position: left
+      size: contain
 
 #male, #female
+  visibility: collapse
 
 .new-account__birthday
   margin: 20px 0 0 0
@@ -70,16 +92,26 @@
   line-height: 15px
   text-transform: uppercase
   color: #1F2041 
-  margin: 20px 0 5px 0 
+  margin: 20px 0 5px 0
+
+#birthday-date
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    -moz-appearance: textfield
+    margin: 0
 
 .toggle
   display: flex
   flex-direction: row-reverse
-  justify-content: flex-end
+  justify-content: 
   align-items: end
+  cursor: pointer
   background:
     image: url('../img/Toggle 2.png')
     repeat: no-repeat
+  .btn 
+    display: none 
     
 .toggle-of
   position: absolute
@@ -89,8 +121,8 @@
 .toggle-on
   position: absolute
   top: 4px
-  left: 3px
-  width: 34px
+  left: 23px
+  width: 12px
   height: 12px
   border: 1px solid #999afc
   border-radius: 10px
@@ -105,15 +137,12 @@
     line-height: 24px
     color: rgba(31, 32, 65, 0.75)
 
-.btn
-  visibility: collapse
-
 .new-account__button
   width: 320px
   height: 44px
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
   border-radius: 22px
-  margin-top: 10px
+  margin-top: 20px
   font-family: 'Montserrat-SemiBold'
   font-style: normal
   font-weight: bold
@@ -128,7 +157,7 @@
   img
     position: absolute
     right: 40px
-    bottom: 98px
+    bottom: 108px
 
 .enter__private
   display: flex
@@ -156,5 +185,15 @@
   cursor: pointer
   border: 2px solid #BC9CFF
   border-radius: 22px
+  &:focus
+    outline: none
+
+.new-account__birthday
+  input
+    cursor: pointer
+    background:
+      image: url(../img/expand_more.png)
+      repeat: no-repeat
+      position: right
   &:focus
     outline: none
