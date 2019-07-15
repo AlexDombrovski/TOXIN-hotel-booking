@@ -17,6 +17,43 @@
   right: 550px
   padding: 40px 30px 30px 30px
 
+.new-account-box-off
+  overflow: hidden
+  opacity: 0
+  transition: all 0.3s ease-in
+  z-index: 0
+
+.message-result
+  position: absolute
+  width: 380px
+  height: 350px
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  box-sizing: border-box
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
+  border-radius: 4px
+  top: 60px
+  right: 550px
+  padding: 40px 30px 30px 30px
+  overflow: hidden
+  opacity: 0
+
+.message-result-on
+  position: absolute
+  width: 380px
+  height: 350px
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  box-sizing: border-box
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
+  border-radius: 4px
+  top: 60px
+  right: 550px
+  padding: 40px 30px 30px 30px
+  opacity: 1
+  transition: all 500ms ease-out
+  
+
 .new-account__title
   font-family: 'Montserrat-SemiBold'
   font-style: normal
@@ -25,6 +62,16 @@
   line-height: 30px
   color: #1F2041  
   margin-bottom: 20px 
+
+.message-result__title
+  font-family: 'Montserrat-SemiBold'
+  font-style: normal
+  font-weight: bold
+  font-size: 24px
+  line-height: 30px
+  color: #1F2041  
+  margin-bottom: 20px 
+  text-align: center
 
 .new-account
   width: 320px
@@ -197,3 +244,12 @@
       position: right
   &:focus
     outline: none
+
+.message-result__name
+  font-family: 'Montserrat-Regular'
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+  margin-bottom: 20px
